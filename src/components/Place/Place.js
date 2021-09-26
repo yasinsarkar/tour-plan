@@ -11,7 +11,7 @@ const Place = () => {
         const newCart =[...cart,places]
         
         setCart(newCart)
-        // console.log(newCart);
+        
     }
 
     
@@ -30,6 +30,7 @@ const Place = () => {
                     <div className="row">
                     {
                         places.map(places=><Tour
+                        key={places.Hotel}
                         places={places}
                         handleAddPlace={handleAddPlace}
                         ></Tour>)

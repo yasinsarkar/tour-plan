@@ -7,13 +7,12 @@ const Cart = (props) => {
     const total= cart.reduce(totalReducer, 0)
 
    
-    // console.log(cart);
     return (
         <div>
-            <h3> Choose Place: {cart.length}
+            <h3>Place List: {cart.length}
             </h3>
             <h3>Total Cost:$ {total}</h3>
-            <h3>Place List:</h3>
+            <h3>Place Name:</h3>
             <ul>
                 {
                 cart.map(place=><li>{place.Place}</li>)
